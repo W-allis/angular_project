@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <div ng-controller="HelloController">
+        {{greetting}}
+        {{prize | currency:'元'}}
+        <input type="text" ng-model="prize">
+    </div>
+
+    <script src="scripts/angular-1.5.2-min.js"></script>
+    <script>
+        angular.module('app', [])
+        .controller('HelloController', function($scope) {
+            $scope.greetting = 'hello'
+        })
+    </script>
+</body>
+</html>

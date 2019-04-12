@@ -1,0 +1,19 @@
+/*filename=assoit.css*/
+@charset "UTF-8";
+
+/*
+ * @author: wallis
+ * @time: 2018-8-27
+*/
+html,
+body {
+  font-family: "微软雅黑";
+}
+.assoitINNER {
+  padding: 1rem;
+}
+.assoitINNER p {
+  text-indent: 2em;
+  margin-bottom: 5px;
+  line-height: 24px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <div ng-controller="HelloCtl">
+        {{greeting}}
+    </div>
+
+    <script src="scripts/angular-1.5.2-min.js"></script>
+    <script>
+        function HelloCtl($scope) {
+            $scope.greeting = 'hello, world'
+        }
+        
+        // 实现array reduce 方法
+        Array.prototype.redux = function(fn, origin) {
+            this.forEach(item => {
+                origin = fn(origin, item, this)
+            })
+
+            return origin
+        }
+
+        var arr = [1, 2, 3, 4]
+
+        var result = arr.redux(function(total, next, arr) {
+            return total + next
+        }, 11)
+
+        console.log(result)
+
+        function LazyMan(name) {
+            this.name = name
+        }
+
+        var operators = {
+            sleep: function() {
+
+            },
+            eat: function() {
+
+            },
+            sleepFrist: function() {
+
+            }
+        } 
+
+        let xhr = new XMLHttpRequest()
+        
+        xhr.open('get', 'index.html', true)
+        xhr.send()
+
+        xhr.onreadystatechange = (result) => {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                console.log(this)
+            }
+        }
+
+    </script>
+</body>
+</html>

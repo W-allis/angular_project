@@ -1,4 +1,4 @@
-angular.module('app', [])
+angular.module('app', ['app.filterService'])
 .directive('draggable', function($document) {
     return function(scope, elemenet, attr) {
         elemenet.on('click', function() {

@@ -1,0 +1,15 @@
+{
+    "presets": [
+        [
+            "env",
+            {
+                "browser": {
+                    "target": ["last 2 versions"]
+                }
+            }
+        ]
+    ],
+    "plugins": [
+        "transform-runtime"
+    ]
+}

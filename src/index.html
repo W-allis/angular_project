@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body onmousedown="return 0" onmousemove="return 0" onselect="javascript:void(0)">
+    <div>
+
+        <!-- <span draggable>aaaa</span>
+        <input type="text" ng-model="test" autofocus>
+        <span replaceTest>{{log}}</span> -->
+            
+        <div ng-controller="Ctrl">
+            <img src="./assets//img/test.jpg" alt="">
+            <img src="./assets//img/scheduler-bg-30-50.png" alt="" width="172px">
+            <div class="box">123</div>
+            <input type="text" ng-model="greeting">
+            <br>
+            <span>filter: {{greeting | reverse}}</span>
+            <br>
+            <span>nothing: {{greeting}}</span>
+            <br>
+            <span>filter:true: {{greeting | reverse:true}}</span>
+            <br>
+            <input type="text" disabled="{{greeting === '123'}}">
+        </div>
+    </div>
+
+
+    <script src="https://cdn.bootcss.com/angular.js/1.3.1/angular.min.js"></script>
+    <!-- <script src="index.js"></script> -->
+</body>
+</html>
